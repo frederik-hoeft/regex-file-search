@@ -78,12 +78,20 @@ public class RegexSearch
 
     private static void DisplayHelp()
     {
-        Console.WriteLine("regexSearch [-r] [-f] [-d] <regex-pattern> [path]");
-        Console.WriteLine("where options in [] are optional parameters.");
-        Console.WriteLine("\"-r\" enables recursive search.");
-        Console.WriteLine("\"-f\" specifies to only search for files.");
-        Console.WriteLine("\"-d\" specifies to only search for directories.");
-        Console.WriteLine("\"regex-pattern\" is the regex pattern that must match any file or folder name that is printed back on the screen.");
-        Console.WriteLine("\"path\" allows to optionally specify a different path (other than the current working director) to search in. The path parameter may be absolute or relative.");
+        PrintBanner();
+        Console.WriteLine("Usage: fire [-r] [-f] [-d] <regex-pattern> [path]");
+        Console.WriteLine("  where options in [] are optional parameters.");
+        Console.WriteLine("  \"-r\" enables recursive search.");
+        Console.WriteLine("  \"-f\" specifies to only search for files.");
+        Console.WriteLine("  \"-d\" specifies to only search for directories.");
+        Console.WriteLine("  \"regex-pattern\" is the regex pattern that must match any file or folder name that is printed back on the screen.");
+        Console.WriteLine("  \"path\" allows to optionally specify a different path (other than the current working director) to search in. The path parameter may be absolute or relative.");
+    }
+
+    private static void PrintBanner()
+    {
+        Console.WriteLine("fire - Find(by)Regex v1.0");
+        Console.WriteLine("Copyright (c) 2022, by Frederik Höft");
+        Console.WriteLine("");
     }
 }
