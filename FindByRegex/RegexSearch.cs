@@ -90,8 +90,8 @@ public class RegexSearch
 
     private static void PrintBanner()
     {
-        Console.WriteLine("fire - Find(by)Regex v1.0");
-        Console.WriteLine("Copyright (c) 2022, by Frederik Höft");
+        Console.WriteLine("fire - Find(by)Regex v1.1");
+        Console.WriteLine("Copyright (c) 2023, by Frederik Höft");
         Console.WriteLine("");
     }
 }
